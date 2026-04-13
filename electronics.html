@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Electronics</title>
+
+    <link rel="stylesheet" href="style.css">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+</head>
+<body>
+
+    <header>
+        <div class="navbar">
+            <div class="nav-logo">
+                <a href="index.html" style="text-decoration:none;">
+                    <div class="logo"></div>
+                </a>
+            </div>
+        </div>
+    </header>
+
+
+    <!-- SEARCH BAR -->
+    <input 
+    type="text" 
+    id="searchInput" 
+    placeholder="Search electronics..." 
+    onkeyup="searchProducts()"
+    >
+
+<!-- PRODUCTS -->
+<div class="shop-section">
+
+    <div class="box product">
+        <div class="box-content">
+            <h2>Smartphones</h2>
+            <div class="box-image" style="background-image: url('smartphone.jpg');"></div>
+            <p>Shop now</p>
+            <button onclick="addToCart('Smartphone', 14999, 'smartphone.jpg')">Add to Cart</button>
+        </div>
+    </div>
+
+    <div class="box product">
+        <div class="box-content">
+            <h2>Headphones</h2>
+            <div class="box-image" style="background-image: url('headphones.jpg');"></div>
+            <p>Shop now</p>
+            <button onclick="addToCart('Headphones', 1999, 'headphones.jpg')">Add to Cart</button>
+        </div>
+    </div>
+
+    <div class="box product">
+        <div class="box-content">
+            <h2>Laptops</h2>
+            <div class="box-image" style="background-image: url('laptop.jpg');"></div>
+            <p>Shop now</p>
+            <button onclick="addToCart('Laptop', 49999, 'laptop.jpg')">Add to Cart</button>
+        </div>
+    </div>
+
+    <div class="box product">
+        <div class="box-content">
+            <h2>Smartwatches</h2>
+            <div class="box-image" style="background-image: url('smartwatch.jpg');"></div>
+            <p>Shop now</p>
+            <button onclick="addToCart('Smartwatch', 2999, 'smartwatch.jpg')">Add to Cart</button>
+        </div>
+    </div>
+
+    <div class="box product">
+        <div class="box-content">
+            <h2>Chargers</h2>
+            <div class="box-image" style="background-image: url('charger.jpg');"></div>
+            <p>Shop now</p>
+            <button onclick="addToCart('Charger', 499, 'charger.jpg')">Add to Cart</button>
+        </div>
+    </div>
+
+    <div class="box product">
+        <div class="box-content">
+            <h2>Accessories</h2>
+            <div class="box-image" style="background-image: url('accessories.jpg');"></div>
+            <p>Shop now</p>
+            <button onclick="addToCart('Accessories', 799, 'accessories.jpg')">Add to Cart</button>
+        </div>
+    </div>
+
+</div>
+
+<footer>
+    <div class="foot-panel1">
+        Back To Top
+    </div>
+
+    <div class="foot-panel2">
+        <ul>
+            <p>Electronics</p>
+            <a>Mobiles</a>
+            <a>Gadgets</a>
+            <a>Accessories</a>
+            <a>Devices</a>
+        </ul>
+
+        <ul>
+            <p>Top Categories</p>
+            <a>Smartphones</a>
+            <a>Laptops</a>
+            <a>Wearables</a>
+            <a>Audio</a>
+        </ul>
+
+        <ul>
+            <p>Support</p>
+            <a>Help Center</a>
+            <a>Returns</a>
+            <a>Shipping</a>
+            <a>Contact</a>
+        </ul>
+
+        <ul>
+            <p>Follow Us</p>
+            <a>Instagram</a>
+            <a>Facebook</a>
+            <a>Twitter</a>
+            <a>YouTube</a>
+        </ul>
+    </div>
+
+    <div class="foot-panel3">
+        <div class="logo"></div>
+    </div>
+
+    <div class="foot-panel4">
+        <div class="pages">
+            <a>Conditions of use</a>
+            <a>Privacy notice</a>
+            <a>Your ads choices</a>
+        </div>
+        <div class="copyright">
+            © 2026, YourStore.com
+        </div>
+    </div>
+</footer>
+
+<script src="script.js"></script>
+
+</body>
+</html>

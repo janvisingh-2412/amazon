@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Clothing</title>
+
+    <link rel="stylesheet" href="style.css">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+</head>
+<body>
+
+    <header>
+        <div class="navbar">
+            <div class="nav-logo">
+                <a href="index.html" style="text-decoration:none;">
+                    <div class="logo"></div>
+                </a>
+            </div>
+        </div>
+    </header>
+
+    <!-- SEARCH BAR -->
+    <input 
+    type="text" 
+    id="searchInput" 
+    placeholder="Search products..." 
+    onkeyup="searchProducts()"
+    >
+
+<!-- PRODUCTS -->
+<div class="shop-section">
+
+    <div class="shop-section">
+
+        <div class="box product">
+            <div class="box-content">
+                <h2>Casual Wear</h2>
+                <div class="box-image" style="background-image: url('casual_wear.jpg');"></div>
+                <p>Shop now</p>
+                <button onclick="addToCart('Casual Wear', 799, 'casual_wear.jpg')">Add to Cart</button>
+            </div>
+        </div>
+
+        <div class="box product">
+            <div class="box-content">
+                <h2>Formal Wear</h2>
+                <div class="box-image" style="background-image: url('formal_wear.jpg');"></div>
+                <p>Shop now</p>
+                <button onclick="addToCart('Formal Wear', 1299, 'formal.jpg')">Add to Cart</button>
+            </div>
+        </div>
+
+        <div class="box product">
+            <div class="box-content">
+                <h2>Ethnic Wear</h2>
+                <div class="box-image" style="background-image: url('ethnic_wear.jpg');"></div>
+                <p>Shop now</p>
+                <button onclick="addToCart('Ethnic Wear', 1499, 'ethnic_wear.jpg')">Add to Cart</button>
+            </div>
+        </div>
+
+        <div class="box product">
+            <div class="box-content">
+                <h2>Winter Wear</h2>
+                <div class="box-image" style="background-image: url('winter_wear.jpg');"></div>
+                <p>Shop now</p>
+                <button onclick="addToCart('Winter Wear', 1199, 'winter_wear.jpg')">Add to Cart</button>
+            </div>
+        </div>
+
+        <div class="box product">
+            <div class="box-content">
+                <h2>Sports Wear</h2>
+                <div class="box-image" style="background-image: url('sports_wear.jpg');"></div>
+                <p>Shop now</p>
+                <button onclick="addToCart('Sports Wear', 999, 'sports_wear.jpg')">Add to Cart</button>
+            </div>
+        </div>
+
+        <div class="box product">
+            <div class="box-content">
+                <h2>Kids Wear</h2>
+                <div class="box-image" style="background-image: url('kids_wear.jpg');"></div>
+                <p>Shop now</p>
+                <button onclick="addToCart('Kids Wear', 699, 'kids_wear.jpg')">Add to Cart</button>
+            </div>
+        </div>
+
+        <div class="box product">
+            <div class="box-content">
+                <h2>Party Wear</h2>
+                <div class="box-image" style="background-image: url('party_wear.jpg');"></div>
+                <p>Shop now</p>
+                <button onclick="addToCart('Party Wear', 1599, 'party_wear.jpg')">Add to Cart</button>
+            </div>
+        </div>
+
+        <div class="box product">
+            <div class="box-content">
+                <h2>Accessories</h2>
+                <div class="box-image" style="background-image: url('accessories.jpg');"></div>
+                <p>Shop now</p>
+                <button onclick="addToCart('Accessories', 399, 'accessories.jpg')">Add to Cart</button>
+            </div>
+        </div>
+
+    </div>
+
+    <footer>
+        <div class="foot-panel1">
+            Back To Top
+        </div>
+
+        <div class="foot-panel2">
+            <ul>
+                <p>Clothing</p>
+                <a>Men</a>
+                <a>Women</a>
+                <a>Kids</a>
+                <a>Accessories</a>
+            </ul>
+
+            <ul>
+                <p>Style</p>
+                <a>Casual</a>
+                <a>Formal</a>
+                <a>Ethnic</a>
+                <a>Trendy</a>
+            </ul>
+
+            <ul>
+                <p>Help</p>
+                <a>Support</a>
+                <a>Returns</a>
+                <a>Shipping</a>
+                <a>Contact</a>
+            </ul>
+
+            <ul>
+                <p>Follow Us</p>
+                <a>Instagram</a>
+                <a>Facebook</a>
+                <a>Twitter</a>
+                <a>YouTube</a>
+            </ul>
+        </div>
+
+        <div class="foot-panel3">
+            <div class="logo"></div>
+        </div>
+
+        <div class="foot-panel4">
+            <div class="pages">
+                <a>Conditions of use</a>
+                <a>Privacy notice</a>
+                <a>Your ads choices</a>
+            </div>
+            <div class="copyright">
+                © 2026, YourStore.com
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+
+</body>
+</html>

@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Stationery</title>
+
+    <link rel="stylesheet" href="style.css">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+</head>
+<body>
+
+    <header>
+        <div class="navbar">
+            <div class="nav-logo">
+                <a href="index.html" style="text-decoration:none;">
+                    <div class="logo"></div>
+                </a>
+            </div>
+        </div>
+    </header>
+
+    <!-- SEARCH BAR -->
+    <input 
+    type="text" 
+    id="searchInput" 
+    placeholder="Search products..." 
+    onkeyup="searchProducts()"
+    >
+
+<!-- PRODUCTS -->
+<div class="shop-section">
+
+    <div class="shop-section">
+
+        <div class="box product">
+            <div class="box-content">
+                <h2>Cute Notebooks 📓</h2>
+                <div class="box-image" style="background-image: url('cute_notebooks.jpg');"></div>
+                <p>Shop now</p>
+                <button onclick="addToCart('Notebooks', 199, 'cute_notebooks.jpg')">Add to Cart</button>
+            </div>
+        </div>
+
+        <div class="box product">
+            <div class="box-content">
+                <h2>Kawaii Pens ✨</h2>
+                <div class="box-image" style="background-image: url('kawaii_pens.jpg');"></div>
+                <p>Shop now</p>
+                <button onclick="addToCart('Pens', 99, 'kawaii_pen.jpg')">Add to Cart</button>
+            </div>
+        </div>
+
+        <div class="box product">
+            <div class="box-content">
+                <h2>Sticky Notes 🌈</h2>
+                <div class="box-image" style="background-image: url('sticky_notes.jpg');"></div>
+                <p>Shop now</p>
+                <button onclick="addToCart('Sticky Notes', 79, 'sticky_notes.jpg')">Add to Cart</button>
+            </div>
+        </div>
+
+        <div class="box product">
+            <div class="box-content">
+                <h2>Planner Diaries 📅</h2>
+                <div class="box-image" style="background-image: url('planner_diaries.jpg');"></div>
+                <p>Shop now</p>
+                <button onclick="addToCart('Planner Diaries', 249, 'planner_diaries.jpg')">Add to Cart</button>
+            </div>
+        </div>
+
+        <div class="box product">
+            <div class="box-content">
+                <h2>Highlighters 💛</h2>
+                <div class="box-image" style="background-image: url('highlighterstat.jpg');"></div>
+                <p>Shop now</p>
+                <button onclick="addToCart('Highlighters', 129, 'highlighterstat.jpg')">Add to Cart</button>
+            </div>
+        </div>
+
+        <div class="box product">
+            <div class="box-content">
+                <h2>Decor Tapes 🎀</h2>
+                <div class="box-image" style="background-image: url('decor_tapes.jpg');"></div>
+                <p>Shop now</p>
+                <button onclick="addToCart('Decor Tapes', 149, 'decor_tapes.jpg')">Add to Cart</button>
+            </div>
+        </div>
+
+        <div class="box product">
+            <div class="box-content">
+                <h2>Cartoon Pouches 🧸</h2>
+                <div class="box-image" style="background-image: url('cartoon_pouches.jpg');"></div>
+                <p>Shop now</p>
+                <button onclick="addToCart('Cartoon Pouches', 199, 'cartoon_pouches.jpg')">Add to Cart</button>
+            </div>
+        </div>
+
+        <div class="box product.">
+            <div class="box-content">
+                <h2>Mini Desk Decor 🌸</h2>
+                <div class="box-image" style="background-image: url('mini_desk_decor.jpg');"></div>
+                <p>Shop now</p>
+                <button onclick="addToCart('Mini Desk Decor', 299, 'mini_desk_decor.jpg')">Add to Cart</button>
+            </div>
+        </div>
+
+    </div>
+
+    <footer>
+        <div class="foot-panel1">
+            Back To Top
+        </div>
+
+        <div class="foot-panel2">
+            <ul>
+                <p>Stationery</p>
+                <a>Notebooks</a>
+                <a>Pens</a>
+                <a>Planners</a>
+                <a>Accessories</a>
+            </ul>
+
+            <ul>
+                <p>Explore</p>
+                <a>Kawaii</a>
+                <a>Minimal</a>
+                <a>Pastel</a>
+                <a>Creative</a>
+            </ul>
+
+            <ul>
+                <p>Help</p>
+                <a>Support</a>
+                <a>Returns</a>
+                <a>Shipping</a>
+                <a>Contact</a>
+            </ul>
+
+            <ul>
+                <p>Follow Us</p>
+                <a>Instagram</a>
+                <a>Facebook</a>
+                <a>Twitter</a>
+                <a>Pinterest</a>
+            </ul>
+        </div>
+
+        <div class="foot-panel3">
+            <div class="logo"></div>
+        </div>
+
+        <div class="foot-panel4">
+            <div class="pages">
+                <a>Conditions of use</a>
+                <a>Privacy notice</a>
+                <a>Your ads choices</a>
+            </div>
+            <div class="copyright">
+                © 2026, YourStore.com
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+
+</body>
+</html>

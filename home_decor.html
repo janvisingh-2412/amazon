@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home Decor</title>
+
+    <link rel="stylesheet" href="style.css">
+    
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+</head>
+<body>
+
+    <header>
+        <div class="navbar">
+            <div class="nav-logo">
+                <a href="index.html" style="text-decoration:none;">
+                    <div class="logo"></div>
+                </a>
+            </div>
+        </div>
+    </header>
+
+
+    <!-- SEARCH BAR -->
+    <input 
+    type="text" 
+    id="searchInput" 
+    placeholder="Search products..." 
+    onkeyup="searchProducts()"
+    >
+
+<!-- PRODUCTS -->
+<div class="shop-section">
+
+    <div class="shop-section">
+
+        <div class="box product">
+            <div class="box-content">
+                <h2>Wall Art</h2>
+                <div class="box-image" style="background-image: url('wall_art.jpg');"></div>
+                <p>Shop now</p>
+                <button onclick="addToCart('Wall Art', 999, 'wall_art.jpg')">Add to Cart</button>
+            </div>
+        </div>
+
+        <div class="box product">
+            <div class="box-content">
+                <h2>Table Lamp</h2>
+                <div class="box-image" style="background-image: url('lamps.jpg');"></div>
+                <p>Shop now</p>
+                <button onclick="addToCart('Table Lamp', 799, 'lamps.jpg')">Add to Cart</button>
+            </div>
+        </div>
+
+        <div class="box product">
+            <div class="box-content">
+                <h2>Flower Vase</h2>
+                <div class="box-image" style="background-image: url('pots.jpg');"></div>
+                <p>Shop now</p>
+                <button onclick="addToCart('Flower Vase', 499, 'pots.jpg')">Add to Cart</button>
+            </div>
+        </div>
+
+        <div class="box product">
+            <div class="box-content">
+                <h2>Wall Clock</h2>
+                <div class="box-image" style="background-image: url('clock.jpg');"></div>
+                <p>Shop now</p>
+                <button onclick="addToCart('Wall Clock', 699, 'clock.jpg')">Add to Cart</button>
+            </div>
+        </div>
+
+        <div class="box product">
+            <div class="box-content">
+                <h2>mirrors</h2>
+                <div class="box-image" style="background-image: url('mirrors.jpg');"></div>
+                <p>Shop now</p>
+                <button onclick="addToCart('Cushion Set', 599, 'mirrors.jpg')">Add to Cart</button>
+            </div>
+        </div>
+
+        <div class="box product ">
+            <div class="box-content">
+                <h2>Minimal deco</h2>
+                <div class="box-image" style="background-image: url('small_deco.jpg');"></div>
+                <p>Shop now</p>
+                <button onclick="addToCart('Photo Frames', 399, 'small_deco.jpg')">Add to Cart</button>
+            </div>
+        </div>
+
+        <div class="box product">
+            <div class="box-content">
+                <h2>Indoor Plants</h2>
+                <div class="box-image" style="background-image: url('plants.jpg');"></div>
+                <p>Shop now</p>
+                <button onclick="addToCart('Indoor Plant', 299, 'plants.jpg')">Add to Cart</button>
+            </div>
+        </div>
+
+        <div class="box product">
+            <div class="box-content">
+                <h2>curtains</h2>
+                <div class="box-image" style="background-image: url('curtains.jpg');"></div>
+                <p>Shop now</p>
+                <button onclick="addToCart('Decor Lights', 349, 'curtains.jpg')">Add to Cart</button>
+            </div>
+        </div>
+
+    </div>
+
+    <footer>
+    <div class="foot-panel1">
+        Back To Top
+    </div>
+
+    <div class="foot-panel2">
+        <ul>
+            <p>Get to Know Us</p>
+            <a>About Amazon</a>
+            <a>Careers</a>
+            <a>Press Releases</a>
+            <a>Amazon Science</a>
+        </ul>
+        <ul>
+            <p>Get to Know Us</p>
+            <a>About Amazon</a>
+            <a>Careers</a>
+            <a>Press Releases</a>
+            <a>Amazon Science</a>
+        </ul>
+        <ul>
+            <p>Get to Know Us</p>
+            <a>About Amazon</a>
+            <a>Careers</a>
+            <a>Press Releases</a>
+            <a>Amazon Science</a>
+        </ul>
+
+        <ul>
+            <p>Get to Know Us</p>
+            <a>About Amazon</a>
+            <a>Careers</a>
+            <a>Press Releases</a>
+            <a>Amazon Science</a>
+        </ul>
+    </div>
+
+    <div class="foot-panel3">
+        <div class="logo"></div>
+    </div>
+
+    <div class="foot-panel4">
+        <div class="pages">
+            <a>Conditions of use</a>
+            <a>Privacy notice</a>
+            <a>Your ads choices</a>
+        </div>
+        <div class="copyright">
+            © 1996-2025, Amazon.com, Inc. or its affiliates
+        </div>
+    </div>
+    </footer>
+
+    <script src="script.js"></script>
+
+</body>
+</html>

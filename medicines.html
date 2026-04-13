@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Medicines</title>
+
+    <link rel="stylesheet" href="style.css">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+</head>
+<body>
+
+    <header>
+        <div class="navbar">
+            <div class="nav-logo">
+                <a href="index.html" style="text-decoration:none;">
+                    <div class="logo"></div>
+                </a>
+            </div>
+        </div>
+    </header>
+
+    <!-- SEARCH BAR -->
+    <input 
+    type="text" 
+    id="searchInput" 
+    placeholder="Search products..." 
+    onkeyup="searchProducts()"
+    >
+
+<!-- PRODUCTS -->
+<div class="shop-section">
+
+    <div class="shop-section">
+
+        <div class="box product">
+            <div class="box-content">
+                <h2>Fever Medicines</h2>
+                <div class="box-image" style="background-image: url('fever.jpg');"></div>
+                <p>Shop now</p>
+                <button onclick="addToCart('Fever Medicines', 199, 'fever.jpg')">Add to Cart</button>
+            </div>
+        </div>
+
+        <div class="box product">
+            <div class="box-content">
+                <h2>Pain Relief</h2>
+                <div class="box-image" style="background-image: url('pain_relief.jpg');"></div>
+                <p>Shop now</p>
+                <button onclick="addToCart('Pain Relief', 149, 'pain_relief.jpg')">Add to Cart</button>
+            </div>
+        </div>
+
+        <div class="box product">
+            <div class="box-content">
+                <h2>Cold & Cough</h2>
+                <div class="box-image" style="background-image: url('cold.jpg');"></div>
+                <p>Shop now</p>
+                <button onclick="addToCart('Cold & Cough', 179, 'cold.jpg')">Add to Cart</button>
+            </div>
+        </div>
+
+        <div class="box product">
+            <div class="box-content">
+                <h2>Allergy Medicines</h2>
+                <div class="box-image" style="background-image: url('allergy.jpg');"></div>
+                <p>Shop now</p>
+                <button onclick="addToCart('Allergy Medicines', 229, 'allergy.jpg')">Add to Cart</button>
+            </div>
+        </div>
+
+        <div class="box product">
+            <div class="box-content">
+                <h2>Diabetes Care</h2>
+                <div class="box-image" style="background-image: url('diabetes.jpg');"></div>
+                <p>Shop now</p>
+                <button onclick="addToCart('Diabetes Care', 499, 'diabetes.jpg')">Add to Cart</button>
+            </div>
+        </div>
+
+        <div class="box product">
+            <div class="box-content">
+                <h2>Heart Care</h2>
+                <div class="box-image" style="background-image: url('heart.jpg');"></div>
+                <p>Shop now</p>
+                <button onclick="addToCart('Heart Care', 599, 'heart.jpg')">Add to Cart</button>
+            </div>
+        </div>
+
+        <div class="box product">
+            <div class="box-content">
+                <h2>Digestive Care</h2>
+                <div class="box-image" style="background-image: url('digestive.jpg');"></div>
+                <p>Shop now</p>
+                <button onclick="addToCart('Digestive Care', 199, 'digestive.jpg')">Add to Cart</button>
+            </div>
+        </div>
+
+        <div class="box product">
+            <div class="box-content">
+                <h2>First Aid</h2>
+                <div class="box-image" style="background-image: url('firstaid.jpg');"></div>
+                <p>Shop now</p>
+                <button onclick="addToCart('First Aid', 299, 'firstaid.jpg')">Add to Cart</button>
+            </div>
+        </div>
+
+    </div>
+
+    <footer>
+        <div class="foot-panel1">
+            Back To Top
+        </div>
+
+        <div class="foot-panel2">
+            <ul>
+                <p>Medicines</p>
+                <a>Prescription</a>
+                <a>OTC Products</a>
+                <a>Health Care</a>
+                <a>Emergency</a>
+            </ul>
+
+            <ul>
+                <p>Categories</p>
+                <a>Fever</a>
+                <a>Pain Relief</a>
+                <a>Cold & Flu</a>
+                <a>Allergy</a>
+            </ul>
+
+            <ul>
+                <p>Help</p>
+                <a>Customer Support</a>
+                <a>Returns</a>
+                <a>Shipping</a>
+                <a>Contact Us</a>
+            </ul>
+
+            <ul>
+                <p>Connect</p>
+                <a>Instagram</a>
+                <a>Facebook</a>
+                <a>Twitter</a>
+                <a>Email</a>
+            </ul>
+        </div>
+
+        <div class="foot-panel3">
+            <div class="logo"></div>
+        </div>
+
+        <div class="foot-panel4">
+            <div class="pages">
+                <a>Conditions of use</a>
+                <a>Privacy notice</a>
+                <a>Your ads choices</a>
+            </div>
+            <div class="copyright">
+                © 2026, YourStore.com
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+
+</body>
+</html>

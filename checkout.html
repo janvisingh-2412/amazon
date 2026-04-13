@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>Checkout</title>
+
+<style>
+body {
+    font-family: Arial;
+    background: linear-gradient(to right, #f7f8fc, #e2e6f0);
+}
+
+.checkout-container {
+    width: 400px;
+    margin: 60px auto;
+    background: white;
+    padding: 25px;
+    border-radius: 12px;
+    box-shadow: 0 8px 20px rgba(0,0,0,0.1);
+}
+
+h2 {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+input, select {
+    width: 100%;
+    padding: 10px;
+    margin: 10px 0;
+    border-radius: 8px;
+    border: 1px solid #ccc;
+}
+
+.place-btn {
+    width: 100%;
+    padding: 12px;
+    background: linear-gradient(135deg, #ff9900, #ff6600);
+    border: none;
+    color: white;
+    font-weight: bold;
+    border-radius: 25px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.place-btn:hover {
+    transform: scale(1.05);
+}
+
+.success-msg {
+    display: none;
+    text-align: center;
+    margin-top: 20px;
+    color: green;
+    font-weight: bold;
+    font-size: 18px;
+}
+</style>
+</head>
+
+<body>
+
+<div class="checkout-container">
+    <h2>🧾 Checkout</h2>
+    <div id="order-summary"></div>
+
+    <input type="text" id="name" placeholder="Full Name">
+    <input type="text" id="address" placeholder="Delivery Address">
+
+    <select id="payment">
+        <option value="">Select Payment Method</option>
+        <option>Cash on Delivery</option>
+        <option>UPI</option>
+        <option>Credit Card</option>
+    </select>
+
+    <button class="place-btn" onclick="placeOrder()">Place Order</button>
+
+    <div class="success-msg" id="successMsg">
+        🎉 Order Placed Successfully!
+    </div>
+</div>
+
+
+<div class="success-screen" id="successScreen">
+    <div class="checkmark">✔</div>
+    <h2>Order Placed!</h2>
+    <p>🎉 Thank you for your purchase</p>
+    <button onclick="goHome()">Continue Shopping</button>
+</div>
+
+<script>
+function placeOrder() {
+    let name = document.getElementById("name").value;
+    let address = document.getElementById("address").value;
+    let payment = document.getElementById("payment").value;
+
+    if (!name || !address || !payment) {
+        alert("Please fill all details!");
+        return;
+    }
+
+    // Clear cart
+    localStorage.removeItem("cart");
+
+    // Show success message
+    document.getElementById("successMsg").style.display = "block";
+
+    // Redirect after 2 seconds
+    setTimeout(() => {
+        window.location.href = "index.html";
+    }, 2000);
+}
+</script>
+
+<script>
+let cart = JSON.parse(localStorage.getItem("cart")) || [];
+let summary = document.getElementById("order-summary");
+
+let total = 0;
+
+cart.forEach(item => {
+    let qty = item.quantity || 1;
+    total += item.price * qty;
+
+    let div = document.createElement("div");
+    div.innerHTML = `${item.name} x ${qty} - ₹${item.price}`;
+    summary.appendChild(div);
+});
+
+summary.innerHTML += `<h3>Total: ₹${total}</h3>`;
+</script>
+
+</body>
+</html>

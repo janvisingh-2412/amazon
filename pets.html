@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pets</title>
+
+    <link rel="stylesheet" href="style.css">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+</head>
+<body>
+
+    <header>
+        <div class="navbar">
+            <div class="nav-logo">
+                <a href="index.html" style="text-decoration:none;">
+                    <div class="logo"></div>
+                </a>
+            </div>
+        </div>
+    </header>
+
+
+    <!-- SEARCH BAR -->
+    <input 
+    type="text" 
+    id="searchInput" 
+    placeholder="Search products..." 
+    onkeyup="searchProducts()"
+    >
+
+<!-- PRODUCTS -->
+<div class="shop-section">
+
+    <div class="shop-section">
+
+        <div class="box product">
+            <div class="box-content">
+                <h2>Dog Food 🐶</h2>
+                <div class="box-image" style="background-image: url('dog_food.jpg');"></div>
+                <p>Shop now</p>
+                <button onclick="addToCart('Dog Food', 499, 'dog_food.jpg')">Add to Cart</button>
+            </div>
+        </div>
+
+        <div class="box product">
+            <div class="box-content">
+                <h2>Cat Food 🐱</h2>
+                <div class="box-image" style="background-image: url('cat_food.jpg');"></div>
+                <p>Shop now</p>
+                <button onclick="addToCart('Cat Food', 399, 'cat_food.jpg')">Add to Cart</button>
+            </div>
+        </div>
+
+        <div class="box product">
+            <div class="box-content">
+                <h2>Pet Toys 🎾</h2>
+                <div class="box-image" style="background-image: url('pet_toys.jpg');"></div>
+                <p>Shop now</p>
+                <button onclick="addToCart('Pet Toys', 299, 'pet_toys.jpg')">Add to Cart</button>
+            </div>
+        </div>
+
+        <div class="box product">
+            <div class="box-content">
+                <h2>Pet Beds 🛏️</h2>
+                <div class="box-image" style="background-image: url('pet_beds.jpg');"></div>
+                <p>Shop now</p>
+                <button onclick="addToCart('Pet Beds', 899, 'pet_beds.jpg')">Add to Cart</button>
+            </div>
+        </div>
+
+        <div class="box product">
+            <div class="box-content">
+                <h2>Grooming 🧼</h2>
+                <div class="box-image" style="background-image: url('grooming.jpg');"></div>
+                <p>Shop now</p>
+                <button onclick="addToCart('Grooming', 249, 'grooming.jpg')">Add to Cart</button>
+            </div>
+        </div>
+
+        <div class="box product">
+            <div class="box-content">
+                <h2>Pet Clothes 👕</h2>
+                <div class="box-image" style="background-image: url('pet_clothes.jpg');"></div>
+                <p>Shop now</p>
+                <button onclick="addToCart('Pet Clothes', 599, 'pet_clothes.jpg')">Add to Cart</button>
+            </div>
+        </div>
+
+        <div class="box product">
+            <div class="box-content">
+                <h2>Aquarium 🐠</h2>
+                <div class="box-image" style="background-image: url('aquarium.jpg');"></div>
+                <p>Shop now</p>
+                <button onclick="addToCart('Aquarium', 1299, 'aquarium.jpg')">Add to Cart</button>
+            </div>
+        </div>
+
+        <div class="box product">
+            <div class="box-content">
+                <h2>Pet Accessories 🦴</h2>
+                <div class="box-image" style="background-image: url('pet_accessories.jpg');"></div>
+                <p>Shop now</p>
+                <button onclick="addToCart('Pet Accessories', 199, 'pet_accessories.jpg')">Add to Cart</button>
+            </div>
+        </div>
+
+    </div>
+
+    <footer>
+        <div class="foot-panel1">
+            Back To Top
+        </div>
+
+        <div class="foot-panel2">
+            <ul>
+                <p>Pets</p>
+                <a>Dogs</a>
+                <a>Cats</a>
+                <a>Fish</a>
+                <a>Accessories</a>
+            </ul>
+
+            <ul>
+                <p>Care</p>
+                <a>Food</a>
+                <a>Grooming</a>
+                <a>Health</a>
+                <a>Training</a>
+            </ul>
+
+            <ul>
+                <p>Help</p>
+                <a>Support</a>
+                <a>Returns</a>
+                <a>Shipping</a>
+                <a>Contact</a>
+            </ul>
+
+            <ul>
+                <p>Follow Us</p>
+                <a>Instagram</a>
+                <a>Facebook</a>
+                <a>Twitter</a>
+                <a>YouTube</a>
+            </ul>
+        </div>
+
+        <div class="foot-panel3">
+            <div class="logo"></div>
+        </div>
+
+        <div class="foot-panel4">
+            <div class="pages">
+                <a>Conditions of use</a>
+                <a>Privacy notice</a>
+                <a>Your ads choices</a>
+            </div>
+            <div class="copyright">
+                © 2026, YourStore.com
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+
+</body>
+</html>
